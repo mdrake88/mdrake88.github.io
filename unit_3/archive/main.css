@@ -1,0 +1,39 @@
+*{margin: 0;}
+html {
+
+}
+body{
+	font-family: "Georgia", serif;
+}
+header {
+	height: 600px;
+	background: url(../images/logan-back-hall.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+main {
+	background: #fff;
+	padding: 15px;
+}
+.nav-buttons {
+	color: #fff;
+	font-family: "Helvetica", Arial, sans-serif;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 2px;
+	margin: 10px;
+	padding: 10px;
+	list-style: none;
+	width: 100px;
+}
+
+#logo {
+	display: block;
+	margin: auto;
+}
+#footer {
+	margin-left: 15px;
+	color: #fff;
+}

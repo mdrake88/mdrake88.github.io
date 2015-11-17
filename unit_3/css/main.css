@@ -1,19 +1,34 @@
-html {
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+/*html {
 	background: url(../images/logan-back-hall.jpg) no-repeat center center fixed;
-	/*-webkit-background-size: cover;
+	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	-o-background-size: cover;*/
+	-o-background-size: cover;
 	background-size: cover;
-}
+}*/
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
 body{
 	font-family: "Georgia", serif;
 }
 header {
 	height: 600px;
+	background: url(../images/logan-back-hall.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 main {
 	background: #fff;
 	padding: 15px;
+}
+nav {
+  width: 50%;
+  position: relative;
+  margin-top: 443px;
+  display: inline-block;
 }
 .nav-buttons {
 	color: #fff;
@@ -25,10 +40,16 @@ main {
 	padding: 10px;
 	list-style: none;
 	width: 100px;
+	display: inline-block;
 }
 #logo {
-	display: block;
-	margin: auto;
+/*	display: block;*/	
+/*	margin: auto;*/
+	display: inline-block;
+	position: relative;
+  float: right;
+  margin-top: 460px;
+  margin-right: 150px;
 }
 #footer {
 	margin-left: 15px;
