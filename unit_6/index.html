@@ -6,55 +6,100 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<header>
+	<header class="wrapper">
 		<img id="logo" alt="Studio Laan, PLLC" title="Studio Laan Logo" src="images/studiolaanlogo.png">
 		<nav class="clearfix">
 			<ul id="menu">
-				<li><a href="#">Resources</a></li>
-				<li><a href="#">About</a>
-					<ul class="submenu">
-						<li><a href="#">Principals</a></li>
-						<li><a href="#">Careers</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Philosophy</a></li>
-				<li><a href="#">Projects</a>
+				<li><a href="#">Projects &#x25be;</a>
 					<ul class="submenu">
 						<li><a href="#">Educational</a></li>
 						<li><a href="#">Commercial/Mixed Use</a></li>
-						<li><a href="#">Institutional</a></li>
 						<li><a href="#">Industrial Design</a></li>
 						<li><a href="#">Planning</a></li>
 						<li><a href="#">Residential</a></li>
 					</ul>
 				</li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">About &#x25be;</a>
+					<ul class="submenu">
+						<li><a href="#">Principals</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Resources</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Philosophy</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
-	<main>
-		<section id="splash">
-			<h2>School Within School - Logan Annex</h2>
-		</section>
-		<section id="ourstory" class="clearfix">
-			<div>
-				<h1>Our Story</h1>
-				<p>Studio Laan, PLLC was founded in 2009 by architects Philip Anderson and Chiara Lalla. We set out to deliver innovative design solutions from micro to macro scale, which are responsive to the needs of both the client and the end user, aesthetically appealing and which promote sustainability through a responsible use of current and future resources. We offer full architectural services, industrial design and sustainability analysis and consulting. Our modern design sensibility, honed by years of practice and study in Rome, Miami and Washington, DC, gives us a different and unique perspective on the aesthetic representation of socially and environmentally responsible construction.</p>
-				<p>As a small firm, we are able to cater our services to the distinct needs of each individual client. We can offer a higher degree of principal-level attention to the project, whether client interaction, problem solving, or quality control. With over 30 years of combined international professional experience, we bring hard-won knowledge and expertise to every project we take on, regardless of size or complexity.</p>
+	<main id="two_column" class="clearfix" class="clearfix">
+		<article id="left">
+			<section id="splash">
+				<h2>School Within School - Logan Annex</h2>
+			</section>
+			<div class="wrapper">
+				<section id="ourstory" class="clearfix">
+					<h1>Our Story</h1>
+					<p>Studio Laan, PLLC was founded in 2009 by architects Philip Anderson and Chiara Lalla. We set out to deliver innovative design solutions from micro to macro scale, which are responsive to the needs of both the client and the end user, aesthetically appealing and which promote sustainability through a responsible use of current and future resources. We offer full architectural services, industrial design and sustainability analysis and consulting. Our modern design sensibility, honed by years of practice and study in Rome, Miami and Washington, DC, gives us a different and unique perspective on the aesthetic representation of socially and environmentally responsible construction.</p>
+					<img src="images/Banneker-Philip.jpg" alt="Philip in the field">
+					<p>As a small firm, we are able to cater our services to the distinct needs of each individual client. We can offer a higher degree of principal-level attention to the project, whether client interaction, problem solving, or quality control. With over 30 years of combined international professional experience, we bring hard-won knowledge and expertise to every project we take on, regardless of size or complexity.</p>
+				</section>
+				<section id="projects" class="clearfix">
+					<h1>Projects</h1>
+					<div id="educational" class="clearfix">
+						<h2>Educational Projects</h2>
+						<a href="#" class="container">
+							<div class="dummy"></div>
+							<div data-content="Drew Elementary" class="element">
+								<img src="images/drew-exterior.jpg">
+							</div>
+						</a>
+						<a href="#" class="container">
+							<div class="dummy"></div>
+							<div data-content="School Within School at Goding" class="element">
+								<img src="images/goding-garden.jpg" alt="Goding Garden">
+							</div>
+						</a>
+						<a href="#" class="container">
+							<div class="dummy"></div>
+							<div data-content="Jefferson Cupola Renovation" class="element">
+								<img src="images/jefferson-cupola-before.jpg" alt="Jefferson Cupola">
+							</div>
+						</a>
+					</div>
+					<div id="residential" class="clearfix">
+						<h2>Residential Projects</h2>
+						<a href="#" class="container">
+		    				<div class="dummy"></div>
+							<div data-content="10th Street Residence" class="element">
+								<img src="images/10th-st-kitchen-2.jpg" alt="10th Street Kitchen">
+							</div>
+						</a>
+						<a href="#" class="container">
+		    				<div class="dummy"></div>
+							<div data-content="C Street Residence" class="element">
+								<img src="images/c-st-living-room.jpg" alt="C Street Living Room">
+							</div>
+						</a>
+					</div>
+				</section>
 			</div>
-			<img src="images/Banneker-Philip.jpg" alt="Philip in the field">
-		</section>
-		<section id="projects" class="clearfix">
-			<h2>Educational Projects</h2>
-			<img src="images/Bike-Rack-2.jpg" alt="Bike Rack" class="projects">
-			<img src="images/Bike-Rack-2.jpg" alt="Bike Rack" class="projects">
-			<img src="images/Bike-Rack-2.jpg" alt="Bike Rack" class="projects">
-		</section>
+		</article>
+		<aside id="right" class="clearfix">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</aside>
 	</main>
-	<footer>
-		<div>
-			<p>Click <a href="mailto:forman@waveborn.com?subject=Hey!">here</a> to contact us.</p>
+	<footer id="footer">
+		<div class="wrapper">
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Credits</a></li>
+			<p id="copyright">Studio Laan, LLC &copy; 2015. All Rights Reserved.</p>
 		</div>
 	</footer>
 </body>
