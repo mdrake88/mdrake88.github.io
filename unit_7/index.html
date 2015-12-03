@@ -3,40 +3,82 @@
 <html>
 <head>
 	<title>Studio Laan, PLLC</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
+	<!-- owl styles -->
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+</head lang="en">
+
 <body>
-	<header class="wrapper">
-		<img id="logo" alt="Studio Laan, PLLC" title="Studio Laan Logo" src="images/studiolaanlogo.png">
-		<nav class="clearfix">
-			<ul id="menu">
-				<li><a href="#">Projects &#x25be;</a>
-					<ul class="submenu">
-						<li><a href="#">Educational</a></li>
-						<li><a href="#">Commercial/Mixed Use</a></li>
-						<li><a href="#">Industrial Design</a></li>
-						<li><a href="#">Planning</a></li>
-						<li><a href="#">Residential</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">About &#x25be;</a>
-					<ul class="submenu">
-						<li><a href="#">Principals</a></li>
-						<li><a href="#">Careers</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Resources</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Philosophy</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
+	<header class="clearfix">
+		<div class="wrapper">
+			<img id="logo" alt="Studio Laan, PLLC" title="Studio Laan Logo" src="images/studiolaanlogo.png">
+			<nav>
+				<ul id="menu">
+					<li><a href="#">Projects <span class="arrow">&#x25be;</span></a>
+						<ul class="submenu">
+							<li><a href="#">Educational</a></li>
+							<li><a href="#">Commercial/Mixed Use</a></li>
+							<li><a href="#">Industrial Design</a></li>
+							<li><a href="#">Planning</a></li>
+							<li><a href="#">Residential</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">About <span class="arrow">&#x25be;</span></a>
+						<ul class="submenu">
+							<li><a href="#">Principals</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Resources</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Philosophy</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
-	<main>
-		<section id="splash">
-			<h2>School Within School - Logan Annex</h2>
-		</section>
+
+	<main class="clearfix">
+		<div id="carousel" class="owl-carousel">
+			<a href="#">
+				<div class="item">
+					<img class="lazyOwl" src="images/logan-entrance.jpg" alt="Logan Entrance">
+				</div>
+			</a>
+			<a href="#">
+				<div class="item">
+					<img class="lazyOwl" src="images/mountainwoods-elevation-3.jpg" alt="Mountain Woods Elevation">
+				</div>
+			</a>
+			<a href="#">
+				<div class="item">
+					<img class="lazyOwl" src="images/c-st-kitchen.jpg" alt="C Street Kitchen">
+				</div>
+			</a>
+			<a href="#">
+				<div class="item">
+					<img class="lazyOwl" src="images/drew-entrance.jpg" alt="Drew Entrance">
+				</div>
+			</a>
+			<a href="#">
+				<div class="item">
+					<img class="lazyOwl" src="images/bike-rack-1.jpg" alt="Bike Rack">
+				</div>
+			</a>
+			<a href="#">
+				<div class="item">
+					<img class="lazyOwl" src="images/logan-classroom-1.jpg" alt="Logan Classroom">
+				</div>
+			</a>
+			<a href="#">
+				<div class="item">
+					<img class="lazyOwl" src="images/goding-corridor-after.jpg" alt="Goding Corridor">
+				</div>
+			</a>
+		</div>
 		<div class="wrapper">
 			<section id="ourstory" class="clearfix">
 				<h1>Our Story</h1>
@@ -85,12 +127,36 @@
 			</section>
 		</div>
 	</main>
+
 	<footer id="footer">
 		<div class="wrapper">
 			<li><a href="#">Contact</a></li>
 			<li><a href="#">Credits</a></li>
-			<p id="copyright">Studio Laan, LLC &copy; 2015. All Rights Reserved.</p>
+			<p id="copyright">Studio Laan, PLLC &copy; 2015. All Rights Reserved.</p>
 		</div>
+
+		<!-- javascript -->
+
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				var owl = $("#carousel")
+				owl.owlCarousel({
+					autoPlay: 5000,
+					goToFirstSpeed: 200,
+					itemsCustom: [
+						[0, 1],
+						[800, 2],
+						[1600, 3]
+					],
+					itemsScaleUp: true,
+					lazyLoad: true,
+					navigation: true,
+					slideSpeed: 500,
+				})
+			})
+		</script>
 	</footer>
 </body>
 </html>
