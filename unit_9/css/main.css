@@ -218,6 +218,9 @@ footer {
     float: right;
     font-size: .9em;
 }
+.pinterest {
+    float: left;
+}
 
 /*page navigation buttons*/
 
