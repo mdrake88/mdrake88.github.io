@@ -218,8 +218,13 @@ footer {
     float: right;
     font-size: .9em;
 }
-.pinterest {
+.pin {
     float: left;
+    clear: both;
+    margin: 1%;
+}
+#inspiration {
+    margin: 2%;
 }
 
 /*page navigation buttons*/
