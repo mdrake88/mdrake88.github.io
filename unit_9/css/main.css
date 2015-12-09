@@ -224,6 +224,9 @@ footer {
 .grid {
     margin: 0 3%;
 }
+.grid-item > img {
+    width: 100%;
+}
 
 /*page navigation buttons*/
 
