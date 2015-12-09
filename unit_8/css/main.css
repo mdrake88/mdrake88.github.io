@@ -420,7 +420,6 @@ footer {
     #menu {
         width: 100%;
         display: block;
-        background-color: #fff;
     }
     #logo {
         display: none;
@@ -428,6 +427,10 @@ footer {
         #menu ul {
             width: 100%;
             display: block;
+        }
+        #menu > ul {
+            background-color: rgba(0,0,0,.3);
+            height: 100vh;
         }
             #menu.align-center > ul,
             #menu.align-right ul ul {
@@ -437,6 +440,7 @@ footer {
                     #menu ul ul li,
                     #menu ul li:hover > ul > li {
                         width: 100%;
+                        background-color: #fff;
                         height: auto;
                         opacity: 1;
                         border-top: 1px solid rgba(0, 0, 0, 0.15);

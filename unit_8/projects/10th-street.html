@@ -4,43 +4,68 @@
 <head>
 	<title>10th Street House</title>
 	<meta charset="utf-8">
+	<!-- styles -->
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
-	<!-- owl styles -->
 	<link rel="stylesheet" type="text/css" href="../css/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="../css/owl.theme.css">
 </head>
-
 <body lang="en">
 	<header>
 		<div class="wrapper">
-			<img id="logo" alt="Studio Laan, PLLC" title="Studio Laan Logo" src="../images/studiolaanlogo.png">
-			<nav class="clearfix">
-				<ul id="menu">
-					<li><a href="#">Projects <span class="arrow">&#x25be;</span></a>
-						<ul class="submenu">
-							<li><a href="#">Educational</a></li>
-							<li><a href="#">Commercial/Mixed Use</a></li>
-							<li><a href="#">Industrial Design</a></li>
-							<li><a href="#">Planning</a></li>
-							<li><a href="#">Residential</a></li>
+			<a href="index.html"><img id="logo" alt="Studio Laan, PLLC" title="Studio Laan Logo" src="images/studiolaanlogo.png"></a>
+			<nav id="menu">
+				<ul>
+					<li class="has-sub"><a href="..index.html#projects">Projects</a>
+						<ul>
+							<li><a href="..index.html#educational">Educational</a>
+								<ul>
+									<li><a href="..projects/amidon.html">Amidon-Bowen ES Elevator</a></li>
+									<li><a href="..projects/banneker.html">Benjamin Banneker HS Elevator</a></li>
+									<li><a href="..projects/drew.html">Charles Drew ES Modernization, Phases 1 & 2</a></li>
+									<li><a href="..projects/cw-harris.html">CW Harris ES Renovation</a></li>
+									<li><a href="..projects/emery.html">Emery ECE Offices</a></li>
+									<li><a href="..projects/jefferson.html">Jefferson MS Academy Rehabilitation</a></li>
+									<li><a href="..projects/johnson.html">J.H. Johnson MS Gymnasium Renovation</a></li>
+									<li><a href="..projects/ross.html">John Ross ES Exterior Rehabilitation</a></li>
+									<li><a href="..projects/peabody.html">Peabody PC Window & Doors Replacement</a></li>
+									<li><a href="..projects/brent-elevator.html">Robert Brent ES Elevator</a></li>
+									<li><a href="..projects/brent-windows.html">Robert Brent ES Window Replacement</a></li>
+									<li><a href="..projects/goding.html">SWS @ Goding Elementary</a></li>
+									<li><a href="..projects/logan.html">SWS @ Logan Annex</a></li>
+								</ul>
+							</li>
+							<li class="has-sub"><a href="commercial.html">Commercial/Mixed Use</a>
+								<ul>
+									<li><a href="..projects/waterfront.html">Waterfront Park - Park House</a></li>
+								</ul>
+							</li>
+							<li class="has-sub"><a href="#residential">Residential</a>
+								<ul>
+									<li><a href="..projects/4th-street.html">4th Street Residence</a></li>
+									<li><a href="..projects/10th-street-basement.html">10th Street Basement</a></li>
+									<li><a href="..projects/10th-street-residence.html">10th Street Residence</a></li>
+									<li><a href="..projects/alley-residence.html">Alley Residence</a></li>
+									<li><a href="..projects/c-street.html">C Street Residence</a></li>
+									<li><a href="..projects/east-capitol-street.html">East Capitol St. Residence</a></li>
+									<li><a href="..projects/mountainside-woods.html">Mountainside Woods Developments</a></li>
+								</ul>
+							</li>
 						</ul>
 					</li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">About <span class="arrow">&#x25be;</span></a>
-						<ul class="submenu">
-							<li><a href="#">Principals</a></li>
-							<li><a href="#">Careers</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Resources</a></li>
+					<li><a href="..about.html#services">Services</a></li>
+					<li class="has-sub"><a href="..about.html">About</a>
+						<ul>
+							<li><a href="..about.html#principals">Principals</a></li>
+							<li><a href="..about.html#careers">Careers</a></li>
+							<li><a href="..about.html#links">Resources</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Philosophy</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="..about.html#philosophy">Philosophy</a></li>
+					<li><a href="..about.html#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-
 	<main class="wrapper">
 		<section id="10th-st" class="clearfix">
 			<h2>10th Street House</h2>
@@ -152,7 +177,6 @@
 			<a id="forward" class="btn" href="./c-street.html">Next Project &#9654;</a>
 		</section>
 	</main>
-
 	<footer class="wrapper">
 		<div id="foot">
 			<li><a href="#">Contact</a></li>
@@ -162,6 +186,7 @@
 		<!-- javascript -->
 		<script src="../js/jquery-1.11.3.min.js"></script>
 		<script src="../js/owl.carousel.min.js"></script>
+		<script src="../js/menu.js"></script>
 		<script>
 			$(document).ready(function() {
 			 

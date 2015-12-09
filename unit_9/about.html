@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>About Us</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- owl styles -->
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+</head>
+<body lang="en">
+	<header>
+		<div class="wrapper">
+			<a href="index.html"><img id="logo" alt="Studio Laan, PLLC" title="Studio Laan Logo" src="images/studiolaanlogo.png"></a>
+			<nav id="menu">
+				<ul>
+					<li class="has-sub"><a href="#projects">Work</a>
+						<ul>
+							<li><a href="educational.html">Educational</a>
+								<ul>
+									<li><a href="projects/amidon.html">Amidon-Bowen ES Elevator</a></li>
+									<li><a href="projects/banneker.html">Benjamin Banneker HS Elevator</a></li>
+									<li><a href="projects/drew.html">Charles Drew ES Modernization, Phases 1 & 2</a></li>
+									<li><a href="projects/cw-harris.html">CW Harris ES Renovation</a></li>
+									<li><a href="projects/emery.html">Emery ECE Offices</a></li>
+									<li><a href="projects/jefferson.html">Jefferson MS Academy Rehabilitation</a></li>
+									<li><a href="projects/johnson.html">J.H. Johnson MS Gymnasium Renovation</a></li>
+									<li><a href="projects/ross.html">John Ross ES Exterior Rehabilitation</a></li>
+									<li><a href="projects/peabody.html">Peabody PC Window & Doors Replacement</a></li>
+									<li><a href="projects/brent-elevator.html">Robert Brent ES Elevator</a></li>
+									<li><a href="projects/brent-windows.html">Robert Brent ES Window Replacement</a></li>
+									<li><a href="projects/goding.html">SWS @ Goding Elementary</a></li>
+									<li><a href="projects/logan.html">SWS @ Logan Annex</a></li>
+								</ul>
+							</li>
+							<li class="has-sub"><a href="commercial.html">Commercial/Mixed Use</a>
+								<ul>
+									<li><a href="projects/waterfront.html">Waterfront Park - Park House</a></li>
+								</ul>
+							</li>
+							<li class="has-sub"><a href="#residential">Residential</a>
+								<ul>
+									<li><a href="projects/4th-street.html">4th Street Residence</a></li>
+									<li><a href="projects/10th-street-basement.html">10th Street Basement</a></li>
+									<li><a href="projects/10th-street-residence.html">10th Street Residence</a></li>
+									<li><a href="projects/alley-residence.html">Alley Residence</a></li>
+									<li><a href="projects/c-street.html">C Street Residence</a></li>
+									<li><a href="projects/east-capitol-street.html">East Capitol St. Residence</a></li>
+									<li><a href="projects/mountainside-woods.html">Mountainside Woods Developments</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#services">Services</a></li>
+					<li class="has-sub"><a href="about.html">About</a>
+						<ul>
+							<li><a href="#principals">Principals</a></li>
+							<li><a href="#careers">Careers</a></li>
+							<li><a href="#links">Resources</a></li>
+						</ul>
+					</li>
+					<li><a href="#philosophy">Philosophy</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="wrapper">
+		<section id="">
+			<
+		</div>
+	</main>
+	<footer id="footer">
+		<div class="wrapper">
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Credits</a></li>
+			<p id="copyright">Studio Laan, LLC &copy; 2015. All Rights Reserved.</p>
+		</div>
+		<!-- javascript -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/menu.js"></script>
+		<script>
+			$(document).ready(function() {
+			 
+			  var sync1 = $("#sync1");
+			  var sync2 = $("#sync2");
+			 
+			  sync1.owlCarousel({
+			    singleItem : true,
+			    slideSpeed : 1000,
+			    navigation: true,
+			    pagination:false,
+			    afterAction : syncPosition,
+			    responsiveRefreshRate : 200,
+			  });
+			 
+			  sync2.owlCarousel({
+			    items : 15,
+			    itemsDesktop      : [1199,10],
+			    itemsDesktopSmall     : [979,10],
+			    itemsTablet       : [768,8],
+			    itemsMobile       : [479,4],
+			    pagination:false,
+			    responsiveRefreshRate : 100,
+			    afterInit : function(el){
+			      el.find(".owl-item").eq(0).addClass("synced");
+			    }
+			  });
+			 
+			  function syncPosition(el){
+			    var current = this.currentItem;
+			    $("#sync2")
+			      .find(".owl-item")
+			      .removeClass("synced")
+			      .eq(current)
+			      .addClass("synced")
+			    if($("#sync2").data("owlCarousel") !== undefined){
+			      center(current)
+			    }
+			  }
+			 
+			  $("#sync2").on("click", ".owl-item", function(e){
+			    e.preventDefault();
+			    var number = $(this).data("owlItem");
+			    sync1.trigger("owl.goTo",number);
+			  });
+			 
+			  function center(number){
+			    var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
+			    var num = number;
+			    var found = false;
+			    for(var i in sync2visible){
+			      if(num === sync2visible[i]){
+			        var found = true;
+			      }
+			    }
+			 
+			    if(found===false){
+			      if(num>sync2visible[sync2visible.length-1]){
+			        sync2.trigger("owl.goTo", num - sync2visible.length+2)
+			      }else{
+			        if(num - 1 === -1){
+			          num = 0;
+			        }
+			        sync2.trigger("owl.goTo", num);
+			      }
+			    } else if(num === sync2visible[sync2visible.length-1]){
+			      sync2.trigger("owl.goTo", sync2visible[1])
+			    } else if(num === sync2visible[0]){
+			      sync2.trigger("owl.goTo", num-1)
+			    }
+			    
+			  }
+			 
+			});
+		</script>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,331 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300);
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,500);
+
+/*CSS reset*/
+
+* {
+    margin: 0; 
+    padding: 0; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*default*/
+
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3em;
+    font-weight: 300;
+    text-align: left;
+    color: #000;
+    padding: 1em 3% .5em 3%;
+}
+h2 {
+    font-family: 'lato', sans-serif;
+    font-size: 4em;
+    font-weight: 300;
+    color: #6D6E71;
+    padding-top: 1em;
+    letter-spacing: .05em;
+    text-align: right;
+}
+p {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #6D6E71;
+    line-height: 1.5em;
+    text-align: justify;
+}
+    p + p {
+        padding-top: 1em;
+    }
+    .project-data p {
+        text-align: left;
+    }
+hr {
+    border: 1px solid #e2e2e2;
+}
+header {
+    width: 100%;
+    height: 52px;
+    position: fixed;
+    z-index: 5;
+    background-color: rgb(255,255,255);
+    border-bottom: 1px solid #e2e2e2;
+}
+main {
+    padding-top: 52px;
+}
+footer {
+    height: 5em;
+    padding: 1em 0;
+}
+    footer #foot {
+        border-top: 1px solid #e2e2e2;
+        margin: 0 3%;
+    } 
+    footer p, footer a {
+        color: #000;
+        text-decoration: none;
+        display: block;
+        font-size: .9em;
+        padding: 3% 0;
+    }
+    footer ul {
+        display: block;
+    }
+    footer li {
+        font-family: 'Lato', sans-serif;
+        float: left;
+        margin-right: 3%;
+        margin-top: 3%;
+        list-style: none;
+    }
+    footer a:hover {
+        color: #000;
+        text-decoration: underline;
+    }
+    nav li {
+        display: inline-block;
+        text-decoration: none;
+    }
+#splash {
+    width: 100%;
+}
+.aspect {
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+    #story .aspect {
+        width: 33.333%;
+    }
+    #news .aspect {
+        width: 100%;
+    }
+    #work .aspect {
+        width: 50%
+    }
+    #splash .dummy {
+        padding-top: 70%;
+    }
+.feature {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: silver;
+}
+        .aspect .feature img {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            object-fit: cover;
+        }
+#story {
+    width: 100%;
+    float: left;
+}
+#news {
+    width: 33.333%;
+    height: 66.666%;
+    float: left;
+}
+#work {
+    width: 66.666%;
+    height: 66.666%;
+    float: left;
+}
+.box {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #000;
+    opacity: 0;
+    transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+}
+    .box .title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        opacity: 0;
+        text-decoration: none;
+        transition: all 0.7s;
+        -webkit-transition: all 0.7s;
+    }
+        .box .title h2 {
+            font-size: 3.5em;
+            font-weight: 500;
+            color: #fff;
+            margin: .5em;
+        }
+    .box:hover > .title {
+        opacity: 1;
+    }
+    .box:hover > .overlay {
+        opacity: 0.7;
+    }
+#logo {
+    float: left;
+    margin-left: 3%;
+    padding-top: .2em;
+    max-width: 150px
+}
+    #ourstory p {
+        width: 66%;
+        margin: 0 3%;
+        float: left;
+    }
+    #ourstory img {
+        width: 25%;
+        margin-right: 3%;
+        float: right;
+    }
+#copyright {
+    float: right;
+    font-size: .8em;
+}
+    .clearfix::after {
+        content: " ";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        height: 0;
+    }
+.wrapper {
+    margin: 0 auto;
+    max-width: 60em;
+    position: relative;
+}
+.project-description {
+    margin: 3%;
+    width: 66%;
+    float: left;
+}
+.project-data {
+    margin: 3%;
+    width: 22%;
+    float: right;
+    font-size: .9em;
+}
+
+/*page navigation buttons*/
+
+#page-nav {
+    font-family: 'Poppins', sans-serif;
+}
+    #page-nav a:link, #page-nav a:visited {
+        display: block;
+        color: #6D6E71;
+    }
+    #page-nav a:hover {
+        color: #4dcc67;
+    }
+#back, #return, #forward {
+    margin: 3%;
+    text-decoration: none;
+}
+#back {
+    width: 26%;
+    float: left;
+    text-align: left;
+}
+#return {
+    width: 30%;
+    float: left;  
+    text-align: center;
+}
+#forward {
+    width: 26%;
+    float: right;
+    text-align: right;
+}
+
+/*projects*/
+
+.project-head {
+    margin: 5px;
+    width: 450px;
+    float: right;
+}
+.liner {
+    margin: 0 2%;
+}
+.container {
+    display: inline-block;
+    position: relative;
+    width: 220px;
+    float: right;
+    margin: 5px;
+}
+.dummy {
+    padding-top: 100%;
+}
+.element {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: silver;
+}
+        .container .element img {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            object-fit: cover;
+        }
+/*    #educational .element:after {
+        background: rgba(255,55,166,0.7);
+    }
+    #educational .project-head {
+        color: #FF37A6;
+    }
+    #commercial .element:after {
+        background: rgba(29,71,192,0.7);
+    }
+    #commercial .project-head {
+        color: #1D47C0;
+    }
+    #residential .element:after {
+        background: rgba(230,194,41,0.7);
+    }
+    #residential .project-head {
+        color: #E6C229;
+    }*/
+.element:after, .element:before {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+}
+.element:after {
+    content:'\A';
+    width:100%; height:100%;
+    top:0; left:0;
+    background: rgba(0,0,0,.7);
+}
+.element:before {
+    content: attr(data-content);
+    width: 90%;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'poppins';
+    z-index: 1;
+    bottom: 0;
+    padding: 5%;
+    text-align: left;
+}
+.element:hover:after, .element:hover:before {
+    opacity:1;
+}

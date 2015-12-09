@@ -4,30 +4,34 @@
 <head>
 	<title>C Street House</title>
 	<meta charset="utf-8">
+	<!-- styles -->
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
-	<!-- owl styles -->
 	<link rel="stylesheet" type="text/css" href="../css/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="../css/owl.theme.css">
 </head>
-
 <body lang="en">
 	<header>
 		<div class="wrapper">
-			<img id="logo" alt="Studio Laan, PLLC" title="Studio Laan Logo" src="../images/studiolaanlogo.png">
-			<nav class="clearfix">
-				<ul id="menu">
-					<li><a href="#">Projects <span class="arrow">&#x25be;</span></a>
-						<ul class="submenu">
-							<li><a href="#">Educational</a></li>
-							<li><a href="#">Commercial/Mixed Use</a></li>
-							<li><a href="#">Industrial Design</a></li>
-							<li><a href="#">Planning</a></li>
-							<li><a href="#">Residential</a></li>
+			<a href="index.html"><img id="logo" alt="Studio Laan, PLLC" title="Studio Laan Logo" src="images/studiolaanlogo.png"></a>
+			<nav id="menu">
+				<ul>
+					<li class="has-sub"><a href="#projects">Projects</a>
+						<ul>
+							<li><a href="educational.html">Educational</a></li>
+							<li><a href="commercial.html">Commercial/Mixed Use</a></li>
+							<li><a href="industrial.html">Industrial Design</a></li>
+							<li><a href="planning.html">Planning</a></li>
+							<li class="has-sub"><a href="#residential">Residential</a>
+								<ul>
+									<li><a href="projects/10th-street.html">10th Street House</a></li>
+									<li><a href="projects/c-street.html">Commercial/Mixed Use</a></li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 					<li><a href="#">Services</a></li>
-					<li><a href="#">About <span class="arrow">&#x25be;</span></a>
-						<ul class="submenu">
+					<li class="has-sub"><a href="about.html">About</a>
+						<ul>
 							<li><a href="#">Principals</a></li>
 							<li><a href="#">Careers</a></li>
 							<li><a href="#">Blog</a></li>
@@ -40,7 +44,6 @@
 			</nav>
 		</div>
 	</header>
-
 	<main class="wrapper">
 		<section id="c-st" class="clearfix">
 			<h2>C Street House</h2>
@@ -138,6 +141,7 @@
 		<!-- javascript -->
 		<script src="../js/jquery-1.11.3.min.js"></script>
 		<script src="../js/owl.carousel.min.js"></script>
+		<script src="../js/menu.js"></script>
 		<script>
 			$(document).ready(function() {
 			 
