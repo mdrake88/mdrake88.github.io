@@ -221,6 +221,9 @@ footer {
 .grid-item {
     width: 200px;
 }
+.grid {
+    margin: 0 3%;
+}
 
 /*page navigation buttons*/
 
