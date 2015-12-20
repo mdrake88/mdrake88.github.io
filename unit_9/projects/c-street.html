@@ -4,37 +4,33 @@
 <head>
 	<title>C Street House</title>
 	<meta charset="utf-8">
-	<!-- styles -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<link rel="stylesheet" type="text/css" href="../css/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="../css/owl.theme.css">
+	<link rel="stylesheet" type="text/css" href="../css/menu.styles.css">
 </head>
 <body lang="en">
 	<header>
 		<div class="wrapper">
-			<a href="index.html"><img id="logo" alt="Studio Laan, PLLC" title="Studio Laan Logo" src="images/studiolaanlogo.png"></a>
+			<a href="../index.html"><img id="logo" alt="Studio Laan, PLLC" title="Studio Laan Logo" src="../images/studiolaanlogo.png"></a>
 			<nav id="menu">
 				<ul>
-					<li class="has-sub"><a href="#projects">Projects</a>
+					<li class="has-sub"><a href="#projects">Work</a>
 						<ul>
-							<li><a href="educational.html">Educational</a></li>
-							<li><a href="commercial.html">Commercial/Mixed Use</a></li>
-							<li><a href="industrial.html">Industrial Design</a></li>
-							<li><a href="planning.html">Planning</a></li>
-							<li class="has-sub"><a href="#residential">Residential</a>
-								<ul>
-									<li><a href="projects/10th-street.html">10th Street House</a></li>
-									<li><a href="projects/c-street.html">Commercial/Mixed Use</a></li>
-								</ul>
+							<li><a href="../educational.html">Educational</a>
+							</li>
+							<li><a href="../commercial.html">Commercial/Mixed Use</a>
+							</li>
+							<li><a href="../residential.html">Residential</a>
 							</li>
 						</ul>
 					</li>
 					<li><a href="#">Services</a></li>
-					<li class="has-sub"><a href="about.html">About</a>
+					<li class="has-sub"><a href="../about.html">About</a>
 						<ul>
 							<li><a href="#">Principals</a></li>
 							<li><a href="#">Careers</a></li>
-							<li><a href="#">Blog</a></li>
 							<li><a href="#">Resources</a></li>
 						</ul>
 					</li>
@@ -80,13 +76,15 @@
 				and attention to construction methods allowed
 				the occupants to remain in the house during
 				renovations.</p>
+				<br>
 			</div>
 			<div class="project-data">
 				<p><em>Project Data</em></p>
-				<p>Project Type: Residential renovation</p>
-				<p>Size: 1,400 sf</p>
-				<p>Construction cost: $150,000</p>
-				<p>Completed: November 2008</p>
+				<p><b>Project Type:</b> Residential renovation</p>
+				<p><b>Size:</b> 1,400 sf</p>
+				<p><b>Construction cost:</b> $150,000</p>
+				<p><b>Completed:</b> November 2008</p>
+				<br>
 			</div>
 			<div id="sync1" class="owl-carousel">
 				<a>
@@ -124,19 +122,18 @@
 			</div>
 		</section>
 		<section id="page-nav" class="clearfix">
-			<a id="back" class="btn" href="./10th-street.html">&#9664; Prev Project</a>
-			<a id="return" href="../index.html#residential">Return to Projects</a>
-			<a id="forward" class="btn" href="#">Next Project &#9654;</a>
+			<a id="back" class="btn" href="./10th-street.html">&#9664; Prev<span> Project</span></a>
+			<a id="return" href="../index.html#residential">Return<span> to Projects</span></a>
+			<a id="forward" class="btn" href="#">Next<span> Project</span> &#9654;</a>
 		</section>
 	</main>
-
 	<footer class="wrapper">
 		<div id="foot">
 			<ul>
 				<li><a href="#">Contact</a></li>
 				<li><a href="#">Credits</a></li>
 			</ul>
-			<p id="copyright">Studio Laan, LLC &copy; 2015. All Rights Reserved.</p>
+			<p id="copyright">Studio Laan, PLLC &copy; 2015.<span> All Rights Reserved.</span></p>
 		</div>
 		<!-- javascript -->
 		<script src="../js/jquery-1.11.3.min.js"></script>
@@ -151,8 +148,7 @@
 			  sync1.owlCarousel({
 			    singleItem: true,
 			    slideSpeed: 1000,
-			    navigation: true,
-			    pagination: false,
+			    pagination: true,
 			    afterAction: syncPosition,
 			    responsiveRefreshRate : 250,
 			  });
@@ -161,8 +157,8 @@
 			    items: 5,
 			    itemsDesktop: [1199,5],
 			    itemsDesktopSmall: [979,5],
-			    itemsTablet: [768,3],
-			    itemsMobile: [479,2],
+			    itemsTablet: [700,0],
+			    itemsMobile: [479,0],
 			    pagination: false,
 			    responsiveRefreshRate: 200,
 			    afterInit : function(el){
