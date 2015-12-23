@@ -230,12 +230,8 @@ footer {
     float: right;
     font-size: .9em;
 }
-#inspiration {
-    width: 100%;
-}
-#pinterest {
+#pinterest a {
     margin: 0 auto;
-    display: inline-block;
 }
     #principals span {
         font-weight: 600;
