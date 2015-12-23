@@ -186,6 +186,22 @@ footer {
     }
     #ourwork h2 {
         text-align: center;
+        margin-left: 0;
+    }
+    #contact iframe {
+        width: 60%;
+        display: block;
+        height: 20em;
+        margin: 0 5%;
+    }
+    #contact p {
+        width: 25%;
+        margin: .5em 5% 0 0;
+        display: block;
+        float: right;
+        clear: both;
+        text-align: left;
+        font-size: .9em;
     }
 #copyright {
     float: right;
@@ -215,7 +231,7 @@ footer {
     font-size: .9em;
 }
 #pinterest {
-    margin: 0 3%;
+    margin: 0 auto;
 }
     #principals span {
         font-weight: 600;
@@ -242,7 +258,7 @@ footer {
         color: #6D6E71;
         font-family: 'Poppins', Arial, sans-serif;
     }
-    #careers a:link {
+    #careers a:link, #contact a:link {
         text-decoration: none;
         color: #000;
         transition: all 0.2s;
@@ -261,7 +277,7 @@ footer {
     width: 22%;
     margin: 5% 5% 0 3%;
 }
-#careers a:hover {
+#careers a:hover, #contact a:hover {
     color: #4dcc67;
 }
 
@@ -418,6 +434,57 @@ Projects
     background: rgba(77,204,103,.8);
 }
 
+/********
+thumbnail
+********/
+
+.gallerycontainer {
+    position: relative;
+    width: 90%;
+    margin: 5%;
+/*Add a height attribute and set to largest image's height to prevent overlaying*/
+}
+.gallerycontainer p {
+    margin-top: 1em;
+}
+.thumbnail {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    padding: .1em 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: .9em;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+.thumbnail img {
+    margin: 0 5px 5px 0;
+    width: 100%;
+    max-height: 24em;
+    object-fit: cover;
+}
+.thumbnail:hover {
+    background-color: transparent;
+    color: #4dcc67;
+}
+.thumbnail span { /*CSS for enlarged image*/
+    position: absolute;
+    padding: 5px;
+    left: -1000px;
+    visibility: hidden;
+    color: black;
+    text-decoration: none;
+}
+.thumbnail span img { /*CSS for enlarged image*/
+    border-width: 0;
+}
+.thumbnail:hover span { /*CSS for enlarged image*/
+    visibility: visible;
+    top: 0;
+    left: 25em; /*position where enlarged image should offset horizontally */
+    z-index: 1;
+}
+
 /**********
 owlCarousel
 **********/
@@ -488,26 +555,35 @@ Media Queries
             #splash .box .dummy {
                 padding-top: 50%;
             }
-        .wrapper #ourstory p {
+        #ourstory p {
            width: 80%;
            margin: 0 10%;
            text-align: justify;
         }
-        .wrapper #ourstory img {
+        #ourstory img {
            width: 50%;
-           margin: 0 25% 2em 25%;
+           margin: 0 25% 2em;
         } 
-        .project-description {
-            margin: 5% 10% 0 10%;
-            width: 80%;
-            text-align: left;
-            font-size: .9em;
+        #contact iframe {
+           width: 100%;
+           margin: 0 0 2em;
         }
-        .project-data {
-            margin: 10%;
-            width: 80%;
-            text-align: justify;
-        }
+        #contact p {
+           width: 80%;
+           text-align: center;
+           margin: 0 10% 2em;
+        } 
+    .project-description {
+        margin: 5% 10% 0 10%;
+        width: 80%;
+        text-align: left;
+        font-size: .9em;
+    }
+    .project-data {
+        margin: 10%;
+        width: 80%;
+        text-align: justify;
+    }
     #sync1 {
         width: 100%;
         margin: 1em 0%;
@@ -562,9 +638,9 @@ Media Queries
         padding:0;
         transform: translate(-50%,-1em);
     }
-    #view-all > .dummy {
-        padding-top: 5em;
-    }
+        #view-all > .dummy {
+            padding-top: 5em;
+        }
     .project-head {
         display: inline-block;
         margin: 1em 0 .3em;
@@ -573,10 +649,10 @@ Media Queries
         height: 5em;
         border: none;
     }
-    .project-head h2 {
-        margin: .75em;
-        padding-top: 0;
-    }
+        .project-head h2 {
+            margin: .75em;
+            padding-top: 0;
+        }
     .container {
         display: inline-block;
         position: relative;
@@ -586,7 +662,10 @@ Media Queries
     .dummy {
         padding-top: 70%;
     }
-    .container .element {
-       display: block;
-    }
+        .container .element {
+           display: block;
+        }
+        .thumbnail:hover span { /*CSS for enlarged image*/
+            visibility: hidden;
+        }
 }

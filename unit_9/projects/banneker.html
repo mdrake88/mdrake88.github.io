@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>C Street House</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="../css/owl.theme.css">
+	<link rel="stylesheet" type="text/css" href="../css/menu.styles.css">
+</head>
+<body lang="en">
+	<header>
+		<div class="wrapper">
+			<a href="../index.html"><img id="logo" alt="Studio Laan, PLLC" title="Studio Laan Logo" src="../images/studiolaanlogo.png"></a>
+			<nav id="menu">
+				<ul>
+					<li class="has-sub"><a href="#projects">Work</a>
+						<ul>
+							<li><a href="../projects.html#educational">Educational</a>
+							</li>
+							<li><a href="../projects.html#commercial">Commercial/Mixed Use</a>
+							</li>
+							<li><a href="../projects.html#residential">Residential</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="../about.html#services">Services</a></li>
+					<li class="has-sub"><a href="../about.html">About</a>
+						<ul>
+							<li><a href="../about.html#principals">Principals</a></li>
+							<li><a href="../about.html#careers">Careers</a></li>
+							<li><a href="../about.html#links">Resources</a></li>
+						</ul>
+					</li>
+					<li><a href="../about.html#philosophy">Philosophy</a></li>
+					<li><a href="../index.html#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="wrapper">
+		<section class="clearfix">
+			<h2>Benjamin Banneker High School Elevator</h2>
+			<div class="project-description">
+				<p>The four-story Banneker High School was designed in 1939 without an elevator. In order to move the school toward full ADA compliance, a new elevator shaft will be inserted within the existing structure of the building. After analysis of the numerous constraints - both physical and operational - a hybrid traction/hydraulic unit was selected as the best fit for the client.</p>
+				<p>Several elevator location options were presented for the client’s review, with the final selection at the intersection of two corridors, adjacent to the administrative suite, for easy access and visual control. Space for the shaft has been carved out of an oversized restroom, which necessitated a revised layout and updated finishes in this space as well.</p>
+				<p>At the corridor side, new walls will be painted an accent color, to assist with wayfinding within the school.</p>
+				<br>
+			</div>
+			<div class="project-data">
+				<p><em>Project Data</em></p>
+				<p><b>Project Type:</b> Renovation / ADA Upgrade</p>
+				<p><b>Client:</b> District of Columbia Public Schools / DGS</p>
+				<p><b>Consultants:</b>  Metropolitan Engineering / Shapiro-O’Brien (MEP), Tadjer Cohen Edelson (Structural), Amicus (Elevator)</p>
+				<br>
+			</div>
+			<div id="sync1" class="owl-carousel">
+				<a>
+					<div class="item" data-content="">
+						<img class="lazyOwl" src="../images/banneker-front.jpg" alt="Front Entrance">
+					</div>
+				</a>
+				<a>
+					<div class="item" data-content="">
+						<img class="lazyOwl" src="../images/banneker-plan.png" alt="Plan">
+					</div>
+				</a>
+				<a>
+					<div class="item" data-content="">
+						<img class="lazyOwl" src="../images/banneker-corridor.jpg" alt="Corridor">
+					</div>
+				</a>
+				<a>
+					<div class="item" data-content="">
+						<img class="lazyOwl" src="../images/banneker-bathroom.jpg" alt="Bathroom">
+					</div>
+				</a>
+			</div>
+			<div id="sync2" class="owl-carousel">
+				<a>
+					<div class="item">
+						<img class="lazyOwl" src="../images/thumbnail/banneker-front_thumbnail.jpg" alt="Front Entrance Thumbnail">
+					</div>
+				</a>
+				<a>
+					<div class="item">
+						<img class="lazyOwl" src="../images/thumbnail/banneker-plan_thumbnail.png" alt="Plan Thumbnail">
+					</div>
+				</a>
+				<a>
+					<div class="item">
+						<img class="lazyOwl" src="../images/thumbnail/banneker-corridor_thumbnail.jpg" alt="Corridor Thumbnail">
+					</div>
+				</a>
+				<a>
+					<div class="item">
+						<img class="lazyOwl" src="../images/thumbnail/banneker-bathroom_thumbnail.jpg" alt="Bathroom Thumbnail">
+					</div>
+				</a>
+			</div>
+		</section>
+		<section id="page-nav" class="clearfix">
+			<a id="back" class="btn" href="./10th-street.html">&#9664; Prev<span> Project</span></a>
+			<a id="return" href="../index.html#residential">Return<span> to Projects</span></a>
+			<a id="forward" class="btn" href="#">Next<span> Project</span> &#9654;</a>
+		</section>
+	</main>
+	<footer class="wrapper">
+		<div id="foot">
+			<ul>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Credits</a></li>
+			</ul>
+			<p id="copyright">Studio Laan, PLLC &copy; 2015.<span> All Rights Reserved.</span></p>
+		</div>
+		<script src="../js/jquery-1.11.3.min.js"></script>
+		<script src="../js/owl.carousel.min.js"></script>
+		<script src="../js/menu.js"></script>
+		<script>
+			$(document).ready(function() {
+			 
+			  var sync1 = $("#sync1");
+			  var sync2 = $("#sync2");
+			 
+			  sync1.owlCarousel({
+			    singleItem: true,
+			    slideSpeed: 1000,
+			    pagination: true,
+			    afterAction: syncPosition,
+			    responsiveRefreshRate : 250,
+			  });
+			 
+			  sync2.owlCarousel({
+			    items: 5,
+			    itemsDesktop: [1199,5],
+			    itemsDesktopSmall: [979,5],
+			    itemsTablet: [700,0],
+			    itemsMobile: [479,0],
+			    pagination: false,
+			    responsiveRefreshRate: 200,
+			    afterInit : function(el){
+			      el.find(".owl-item").eq(0).addClass("synced");
+			    }
+			  });
+			 
+			  function syncPosition(el){
+			    var current = this.currentItem;
+			    $("#sync2")
+			      .find(".owl-item")
+			      .removeClass("synced")
+			      .eq(current)
+			      .addClass("synced")
+			    if($("#sync2").data("owlCarousel") !== undefined){
+			      center(current)
+			    }
+			  }
+			 
+			  $("#sync2").on("click", ".owl-item", function(e){
+			    e.preventDefault();
+			    var number = $(this).data("owlItem");
+			    sync1.trigger("owl.goTo",number);
+			  });
+			 
+			  function center(number){
+			    var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
+			    var num = number;
+			    var found = false;
+			    for(var i in sync2visible){
+			      if(num === sync2visible[i]){
+			        var found = true;
+			      }
+			    }
+			 
+			    if(found===false){
+			      if(num>sync2visible[sync2visible.length-1]){
+			        sync2.trigger("owl.goTo", num - sync2visible.length+2)
+			      }else{
+			        if(num - 1 === -1){
+			          num = 0;
+			        }
+			        sync2.trigger("owl.goTo", num);
+			      }
+			    } else if(num === sync2visible[sync2visible.length-1]){
+			      sync2.trigger("owl.goTo", sync2visible[1])
+			    } else if(num === sync2visible[0]){
+			      sync2.trigger("owl.goTo", num-1)
+			    }
+			    
+			  }
+			 
+			});
+		</script>
+	</footer>
+</body>
+</html>
