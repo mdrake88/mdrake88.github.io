@@ -230,8 +230,9 @@ footer {
     float: right;
     font-size: .9em;
 }
-#pinterest a {
-    margin: 0 auto;
+#pinterest {
+    padding: 0 auto;
+    text-align: center;
 }
     #principals span {
         font-weight: 600;
