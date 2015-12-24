@@ -281,6 +281,10 @@ footer {
 #careers a:hover, #contact a:hover {
     color: #4dcc67;
 }
+#services ul {
+    list-style: disc;
+    margin-left: 1.5em;
+}
 
 /***************
 Page Nav Buttons
@@ -446,10 +450,11 @@ thumbnail
 /*Add a height attribute and set to largest image's height to prevent overlaying*/
 }
 .gallerycontainer p {
-    margin-top: 1em;
+    margin-top: 2em;
+    font-weight: bold;
 }
 .thumbnail {
-    color: #000;
+    color: #6D6E71;
     text-decoration: none;
     display: inline-block;
     padding: .1em 0;
